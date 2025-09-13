@@ -1,3 +1,4 @@
+Merci à Jeanne, Clara, Adèle et Romain sans qui ce projet n'aurait jamais vu le jour
 
 # 🏥 CARJAC: Recommandation de traitement fondée sur des données probantes pour le cancer du sein métastatique
 
