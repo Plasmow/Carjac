@@ -1,0 +1,45 @@
+{
+    "patient_id": "MBC_002", 
+    "demographics": {
+      "age": 45,
+      "gender": "female",
+      "performance_status": 0
+    },
+    "diagnosis": {
+      "cancer_type": "breast",
+      "stage": "metastatic",
+      "histology": "invasive_ductal_carcinoma",
+      "grade": 3
+    },
+    "biomarkers": {
+      "ER": "negative",
+      "PgR": "negative",
+      "HER2": "negative", 
+      "PIK3CA": "wild_type",
+      "BRCA1": "mutant",
+      "BRCA2": "wild_type",
+      "PALB2": "wild_type",
+      "ESR1": "wild_type",
+      "PD_L1": "positive",
+      "MSI": "stable",
+      "TMB": 8.5,
+      "NTRK": "negative"
+    },
+    "treatment_history": [
+      {
+        "line": 1,
+        "regimen": "carboplatin + paclitaxel",
+        "response": "complete_response",
+        "duration_months": 8,
+        "progression": true
+      }
+    ],
+    "lab_values": {
+      "HbA1c": 5.4,
+      "fasting_glucose": 92,
+      "creatinine": 0.8,
+      "bilirubin": 0.9
+    },
+    "metastatic_sites": ["lung", "lymph_nodes"],
+    "contraindications": []
+  }

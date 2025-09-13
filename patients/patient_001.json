@@ -1,0 +1,48 @@
+{
+  "patient_id": "MBC_001",
+  "demographics": {
+    "age": 58,
+    "gender": "female",
+    "performance_status": 1
+  },
+  "diagnosis": {
+    "cancer_type": "breast",
+    "stage": "metastatic",
+    "histology": "invasive_ductal_carcinoma",
+    "grade": 2
+  },
+  "biomarkers": {
+    "ER": "positive",
+    "PgR": "positive",
+    "HER2": "negative",
+    "PIK3CA": "mutant",
+    "BRCA1": "wild_type",
+    "BRCA2": "wild_type",
+    "PALB2": "wild_type",
+    "ESR1": "wild_type",
+    "PD_L1": "negative",
+    "MSI": "stable",
+    "TMB": 3.2,
+    "NTRK": "negative"
+  },
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen": "CDK4/6 inhibitor + aromatase inhibitor",
+      "response": "partial_response",
+      "duration_months": 14,
+      "progression": true
+    }
+  ],
+  "lab_values": {
+    "HbA1c": 6.8,
+    "fasting_glucose": 105,
+    "creatinine": 0.9,
+    "bilirubin": 1.2
+  },
+  "metastatic_sites": [
+    "bone",
+    "liver"
+  ],
+  "contraindications": []
+}

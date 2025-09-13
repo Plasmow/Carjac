@@ -1,0 +1,138 @@
+{
+    "traitement 0": {
+        "treatment_title": "Alpelisib + Fulvestrant",
+        "evidence_level": "I",
+        "recommendation_strength": "Moderate",
+        "rationale": "Patient has Luminal metastatic breast cancer. Recommended after progression on 1 prior line(s).",
+        "description_genes": [
+            {
+                "gene": "PIK3CA",
+                "type": "mutant",
+                "desc": "phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha"
+            }
+        ],
+        "interaction": [
+            {
+                "Alpelisib": {
+                    "gene": "PIK3CA",
+                    "type": "NULL",
+                    "source": "OncoKB",
+                    "date": "23-Jul-20"
+                },
+                "Fulvestrant": {
+                    "gene": "PIK3CA",
+                    "type": "NULL",
+                    "source": "JAX-CKB",
+                    "date": "10-Apr-24"
+                }
+            }
+        ],
+        "docs": [
+            {
+                "traitement": "Alpelisib + Fulvestrant",
+                "doc_author": "Xin Xiong et al.",
+                "date": "Feb 2025",
+                "abstract": "Breast cancer, characterized by unique epidemiological patterns and significant heterogeneity, remains one of the leading causes of malignancy-related deaths in women. The increasingly nuanced molecular subtypes of breast cancer have enhanced the comprehension and precision treatment of this disease. The mechanisms of tumorigenesis and progression of breast cancer have been central to scientific research, with investigations spanning various perspectives such as tumor stemness, intra-tumoral microbiota, and circadian rhythms. Technological advancements, particularly those integrated with artificial intelligence, have significantly improved the accuracy of breast cancer detection and diagnosis. The emergence of novel therapeutic concepts and drugs represents a paradigm shift towards personalized medicine. Evidence suggests that optimal diagnosis and treatment models tailored to individual patient risk and expected subtypes are crucial, supporting the era of precision oncology for breast cancer. Despite the rapid advancements in oncology and the increasing emphasis on the clinical precision treatment of breast cancer, a comprehensive update and summary of the panoramic knowledge related to this disease are needed. In this review, we provide a thorough overview of the global status of breast cancer, including its epidemiology, risk factors, pathophysiology, and molecular subtyping. Additionally, we elaborate on the latest research into mechanisms contributing to breast cancer progression, emerging treatment strategies, and long-term patient management. This review offers valuable insights into the latest advancements in Breast Cancer Research, thereby facilitating future progress in both basic research and clinical application.",
+                "title": "breast cancer pathogenesis and treatments",
+                "score": 0.6059006632242347
+            },
+            {
+                "traitement": "Alpelisib + Fulvestrant",
+                "doc_author": "Suzanne J Grant et al.",
+                "date": "Mar 2024",
+                "abstract": "Neoadjuvant therapy has become a standard treatment for patients with stage II/III HER2 positive and triple negative breast cancer, and in well-selected patients with locally advanced and borderline resectable high risk, luminal B breast cancer. Side effects of neoadjuvant therapy, such as fatigue, cardiotoxicity, neurotoxicity, anxiety, insomnia, vasomotor symptoms, gastrointestinal disturbance as well as a raft of immune-related adverse events, may impact treatment tolerance, long-term outcomes, and quality of life. Providing early supportive care prior to surgery (typically termed 'prehabilitation') may mitigate these side effects and improve quality of life.During our codesign of the intervention, consumers and healthcare professionals expressed desire for a programme that 'packaged' care, was easy to access, and was embedded in their care pathway. We hypothesise that a multimodal supportive care programme including exercise and complementary therapies, underpinned by behavioural change theory will improve self-efficacy, quality of life, readiness for surgery and any additional treatment for women with breast cancer. We seek to explore cardiometabolic, residual cancer burden and surgical outcomes, along with chemotherapy completion (relative dose intensity). This article describes the protocol for a feasibility study of a multimodal prehabilitation programme.",
+                "title": "Feasibility study of a multimodal prehabilitation programme in women receiving neoadjuvant therapy f",
+                "score": 0.5540612217295225
+            },
+            {
+                "traitement": "Alpelisib + Fulvestrant",
+                "doc_author": "Yumei Guan et al.",
+                "date": "Jun 2023",
+                "abstract": "The combination of cyclin-dependent kinase 4 and 6 (CDK4/6) inhibitors and endocrine treatment has benefited patients with estrogen receptor-positive/human epidermal growth factor receptor 2-negative (ER + /HER2-) metastatic breast cancer; however, its effects in the neoadjuvant setting for ER + /HER2- early breast cancer (EBC) are unclear. Systematic searches were performed in PubMed, Embase, Cochrane Library, and major oncological meetings for trials of CDK4/6 inhibitors plus neoadjuvant endocrine treatment (NET) vs. NET/neoadjuvant chemotherapy (NACT) alone up to January 30, 2021. We assessed the efficacy of CDK4/6 inhibitors plus NET vs. NET/NACT alone in ER + /HER2- EBC. Six studies that included 803 patients treated with CDK4/6 inhibitors plus NET vs. NET/NACT alone were used. Compared with NET/NACT alone, CDK4/6 inhibitors plus NET increased the complete cell cycle arrest (CCCA) rate (OR, 9.00; 95% CI, 5.42-14.96; P < 0.001). Nonsignificant differences between CDK4/6 inhibitors and NET/NACT alone occurred in the preoperative endocrine prognostic index (PEPI)-0 rate (OR, 1.13; 95% CI, 0.59-2.18; P = 0.71), pathological complete response (pCR) rate (OR, 0.75; 95% CI, 0.13-4.29; P = 0.74), objective response rate (ORR) (OR, 0.70; 95% CI, 0.21-2.29; P = 0.55), and disease control rate (DCR) (OR, 1.16; 95% CI, 0.47-2.89; P = 0.74). CDK4/6 inhibitors plus NET indicated a high risk of neutropenia (OR, 56.43; 95% CI, 15.76-202.11; P < 0.001) as an adverse effect (AE) and elevated alanine aminotransferase (ALT) level (OR, 15.30; 95% CI, 2.02-115.98; P = 0.008) as grade 3/4 AEs. Compared with NET/NACT alone, CDK4/6 inhibitors plus NET increased CCCA rate in ER + /HER2- EBC patients. CDK4/6 inhibitors plus NET did not substantially improve the PEPI-0 rate, pCR rate, ORR, or DCR. The combination increased the risk of neutropenia and elevated ALT levels. In the neoadjuvant setting, addition of CDK4/6 inhibitors to NET may be an option for treating ER + /HER2- EBC.",
+                "title": "Cyclin dependent kinase 4 and 6 inhibitors in combination with neoadjuvant endocrine therapy in estr",
+                "score": 0.4656367200781857
+            },
+            {
+                "traitement": "Alpelisib + Fulvestrant",
+                "doc_author": "Nicholas C Turner et al.",
+                "date": "Oct 2020",
+                "abstract": "Circulating tumour DNA (ctDNA) testing might provide a current assessment of the genomic profile of advanced cancer, without the need to repeat tumour biopsy. We aimed to assess the accuracy of ctDNA testing in advanced breast cancer and the ability of ctDNA testing to select patients for mutation-directed therapy.",
+                "title": "Circulating tumour DNA analysis to direct therapy in advanced breast cancer plasmaMATCH a multicentr",
+                "score": 0.46390056094984833
+            },
+            {
+                "traitement": "Alpelisib + Fulvestrant",
+                "doc_author": "Gregory T Gallanis et al.",
+                "date": "Feb 2021",
+                "abstract": "Patients with hormone receptor-positive/HER2-negative (HR+/HER2-) metastatic breast cancer have benefitted from treatment with palbociclib, a cyclin-dependent kinase (CDK) 4/6 inhibitor capable of selectively targeting mechanisms of cell cycle progression that contribute to tumor cell proliferation. Palbociclib use in this setting demonstrates improved progression-free survival when given in combination with aromatase inhibitors or fulvestrant.",
+                "title": "An evaluation of palbociclib as a breast cancer treatment option a current update",
+                "score": 0.4482849261271203
+            }
+        ]
+    },
+    "traitement 1": {
+        "treatment_title": "Everolimus + Exemestane",
+        "evidence_level": "I",
+        "recommendation_strength": "Moderate",
+        "rationale": "Patient has Luminal metastatic breast cancer. Recommended after progression on 1 prior line(s).",
+        "description_genes": [
+            {
+                "gene": "PIK3CA",
+                "type": "mutant",
+                "desc": "phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha"
+            }
+        ],
+        "interaction": [
+            {
+                "Everolimus": {
+                    "gene": "PIK3CA",
+                    "type": "NULL",
+                    "source": "ClearityFoundationBiomarkers",
+                    "date": "26-Jul-13"
+                }
+            }
+        ],
+        "docs": [
+            {
+                "traitement": "Everolimus + Exemestane",
+                "doc_author": "Nicholas Turner et al.",
+                "date": "Feb 2022",
+                "abstract": "PI3K/AKT pathway alterations are frequent in hormone receptor-positive (HR+) breast cancers. IPATunity130 Cohort B investigated ipatasertib-paclitaxel in PI3K pathway-mutant HR+ unresectable locally advanced/metastatic breast cancer (aBC).",
+                "title": "Ipatasertib plus paclitaxel for PIK3CAAKT1PTEN altered hormone receptor positive HER2 negative advan",
+                "score": 0.8557796691105429
+            },
+            {
+                "traitement": "Everolimus + Exemestane",
+                "doc_author": "Xin Xiong et al.",
+                "date": "Feb 2025",
+                "abstract": "Breast cancer, characterized by unique epidemiological patterns and significant heterogeneity, remains one of the leading causes of malignancy-related deaths in women. The increasingly nuanced molecular subtypes of breast cancer have enhanced the comprehension and precision treatment of this disease. The mechanisms of tumorigenesis and progression of breast cancer have been central to scientific research, with investigations spanning various perspectives such as tumor stemness, intra-tumoral microbiota, and circadian rhythms. Technological advancements, particularly those integrated with artificial intelligence, have significantly improved the accuracy of breast cancer detection and diagnosis. The emergence of novel therapeutic concepts and drugs represents a paradigm shift towards personalized medicine. Evidence suggests that optimal diagnosis and treatment models tailored to individual patient risk and expected subtypes are crucial, supporting the era of precision oncology for breast cancer. Despite the rapid advancements in oncology and the increasing emphasis on the clinical precision treatment of breast cancer, a comprehensive update and summary of the panoramic knowledge related to this disease are needed. In this review, we provide a thorough overview of the global status of breast cancer, including its epidemiology, risk factors, pathophysiology, and molecular subtyping. Additionally, we elaborate on the latest research into mechanisms contributing to breast cancer progression, emerging treatment strategies, and long-term patient management. This review offers valuable insights into the latest advancements in Breast Cancer Research, thereby facilitating future progress in both basic research and clinical application.",
+                "title": "breast cancer pathogenesis and treatments",
+                "score": 0.8423768495902113
+            },
+            {
+                "traitement": "Everolimus + Exemestane",
+                "doc_author": "Khadijeh Barzaman et al.",
+                "date": "Jul 2020",
+                "abstract": "During the past recent years, various therapies emerged in the era of breast cancer. Breast cancer is a heterogeneous disease in which genetic and environmental factors are involved. Breast cancer stem cells (BCSCs) are the main player in the aggressiveness of different tumors and also, these cells are the main challenge in cancer treatment. Moreover, the major obstacle to achieve an effective treatment is resistance to therapies. There are various types of treatment for breast cancer (BC) patients. Therefore, in this review, we present the current treatments, novel approaches such as antibody-drug conjugation systems (ADCs), nanoparticles (albumin-, metal-, lipid-, polymer-, micelle-based nanoparticles), and BCSCs-based therapies. Furthermore, prognostic and predictive biomarkers will be discussed also biomarkers that have been applied by some tests such as Oncotype DX, Mamm αPrint, and uPA/PAI-1 are regarded as suitable prognostic and predictive factors in breast cancer.",
+                "title": "Breast cancer biology biomarkers and treatments",
+                "score": 0.83959722419764
+            },
+            {
+                "traitement": "Everolimus + Exemestane",
+                "doc_author": "Masanori Oshi et al.",
+                "date": "Jul 2020",
+                "abstract": "E2F transcription factors play critical roles in the cell cycle. Therefore, their activity is expected to reflect tumor aggressiveness and responsiveness to therapy. We scored 3905 tumors of nine breast cancer cohorts for this activity based on their gene expression for the Hallmark E2F targets gene set. As expected, tumors with a high score had an increased expression of cell proliferation-related genes. A high score was significantly associated with shorter patient survival, greater MKI67 expression, histological grade, stage, and genomic aberrations. Furthermore, metastatic tumors had higher E2F scores than the primary tumors from which they arose. Although tumors with a high score had greater infiltration by both pro- and anti-cancerous immune cells, they had an increased expression of immune checkpoint genes. Estrogen receptor (ER)-positive/human epidermal growth factor receptor 2 (HER2)-negative cancer with a high E2F score achieved a significantly higher pathological complete response (pCR) rate to neoadjuvant chemotherapy. The E2F score was significantly associated with the expression of cyclin-dependent kinase (CDK)-related genes and strongly correlated with sensitivity to CDK inhibition in cell lines. In conclusion, the E2F score is a marker of breast cancer aggressiveness and predicts the responsiveness of ER-positive/HER2-negative patients to neoadjuvant chemotherapy and possibly to CDK and immune checkpoint inhibitors.",
+                "title": "The E2F Pathway Score as a Predictive Biomarker of Response to Neoadjuvant Therapy in ERHER2 Breast",
+                "score": 0.7721402914896811
+            },
+            {
+                "traitement": "Everolimus + Exemestane",
+                "doc_author": "Mariam Mansour et al.",
+                "date": "Jun 2017",
+                "abstract": "Despite many advances in the treatment of breast cancer, the development of metastatic disease remains an incurable and frequent cause of cancer death for women worldwide. An improved understanding of the role of host immunosurveillance in modulating breast cancer disease biology, as well as impressive survival benefits seen to checkpoint blockade in other malignancies have provided great hope for an expanding role of immunotherapies in breast cancer management. While these novel therapies are currently being investigated in clinical trials, signals of efficacy, and tolerability in early phase studies suggest these will eventually make their way into standard practice algorithms. Ongoing research has highlighted a high degree of intertumoural heterogeneity in tumour lymphocytic infiltrates, suggesting some tumours or subtypes are more immunogenic than others. Furthermore, tumour intrinsic mechanisms of immune evasion are beginning to be uncovered, potentially representing key therapeutic targets to use in combination with checkpoint blockade, exemplifying the emerging concept of personalised medicine approaches to immune therapies. Subsequently, different immunotherapeutic strategies may be required based on stratification by these factors-for the minority of tumours with a high level of pre-existing immunity, immune checkpoint blockade monotherapy may be sufficient. However, for the majority of tumours with lower levels of pre-existing immunity, combination approaches will likely be required to achieve maximal therapeutic effect. Results of ongoing clinical trials including combinations with chemotherapy, radiation therapy, and targeted therapies are eagerly awaited.",
+                "title": "Advancing immunotherapy in metastatic breast cancer",
+                "score": 0.7381099455669677
+            }
+        ]
+    }
+}

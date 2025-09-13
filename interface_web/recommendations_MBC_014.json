@@ -1,0 +1,18 @@
+{
+  "patient_id": "MBC_014",
+  "subtype": "Luminal",
+  "biomarker_summary": {
+    "ER": "positive",
+    "PgR": "positive",
+    "HER2": "negative",
+    "PIK3CA": "mutant",
+    "BRCA1": "wild_type",
+    "BRCA2": "wild_type",
+    "PALB2": "wild_type",
+    "MSI": "stable",
+    "TMB": 3.2
+  },
+  "treatment_history_summary": "1 prior line(s), last: CDK4/6 inhibitor + aromatase inhibitor",
+  "recommendations": [],
+  "total_recommendations": 0
+}

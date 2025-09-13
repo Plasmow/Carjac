@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Identifiant Non Utilisé</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            position: relative; /* Pour positionner les éléments absolus */
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 30px 40px;
+            text-align: center;
+            z-index: 1; /* Pour qu'il soit au-dessus des liens absolus */
+        }
+
+        h1 {
+            color: #00796b;
+            margin-bottom: 20px;
+        }
+
+        a.button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #00796b;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        a.button:hover {
+            background-color: #004d40;
+        }
+
+        /* Bouton Accueil en haut à gauche */
+        .back-home {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            color: #00796b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-home:hover {
+            text-decoration: underline;
+        }
+
+        /* Logo en haut à droite */
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            height: 150px; /* Ajuste si nécessaire */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Bouton Accueil en haut à gauche -->
+<a href="{% url 'home' %}" class="back-home">Accueil</a>
+
+<!-- Logo en haut à droite -->
+<img src="{% static 'logo_carjac.png' %}" alt="Logo CARJAC" class="logo">
+
+<div class="container">
+    <h1>Identifiant « {{ patient_id }} » non utilisé</h1>
+    <a href="{% url 'patient_id_input' %}" class="button">Retour</a>
+</div>
+</body>
+</html>

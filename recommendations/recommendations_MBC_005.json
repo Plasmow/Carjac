@@ -1,0 +1,75 @@
+{
+  "patient_id": "MBC_005",
+  "subtype": "TNBC",
+  "biomarker_summary": {
+    "ER": "negative",
+    "PgR": "negative",
+    "HER2": "negative",
+    "PIK3CA": "wild_type",
+    "BRCA1": "wild_type",
+    "BRCA2": "wild_type",
+    "PALB2": "wild_type",
+    "MSI": "high",
+    "TMB": 15.3
+  },
+  "treatment_history_summary": "2 prior line(s), last: sacituzumab govitecan",
+  "recommendations": [
+    {
+      "treatment": "Sacituzumab Govitecan",
+      "evidence_level": "I",
+      "recommendation_strength": "Strong",
+      "node_path": "Metastatic Breast Cancer Treatment Decision (ESMO 2021/24) -> Initial Biopsy, Biomarker & Staging Assessment (updated) -> Breast Cancer Subtype Classification -> Triple\u2011Negative Breast Cancer (TNBC) -> TNBC Second\u2011line (requires prior progression)",
+      "rationale": "Patient has TNBC metastatic breast cancer. Recommended after progression on 2 prior line(s).",
+      "keywords": [
+        "antibody drug conjugate",
+        "metastatic breast cancer",
+        "Trop-2",
+        "sacituzumab govitecan",
+        "systemic therapy",
+        "ADC"
+      ]
+    },
+    {
+      "treatment": "Standard single\u2011agent chemo",
+      "evidence_level": "I",
+      "recommendation_strength": "Moderate",
+      "node_path": "Metastatic Breast Cancer Treatment Decision (ESMO 2021/24) -> Initial Biopsy, Biomarker & Staging Assessment (updated) -> Breast Cancer Subtype Classification -> Triple\u2011Negative Breast Cancer (TNBC) -> TNBC Second\u2011line (requires prior progression)",
+      "rationale": "Patient has TNBC metastatic breast cancer. Recommended after progression on 2 prior line(s).",
+      "keywords": [
+        "systemic therapy",
+        "metastatic breast cancer"
+      ]
+    },
+    {
+      "treatment": "Pembrolizumab (tumour\u2011agnostic)",
+      "evidence_level": "II",
+      "recommendation_strength": "Moderate",
+      "node_path": "Metastatic Breast Cancer Treatment Decision (ESMO 2021/24) -> Initial Biopsy, Biomarker & Staging Assessment (updated) -> Tumour\u2011agnostic Targeted Therapy -> MSI\u2011High / dMMR",
+      "rationale": "Patient has TNBC metastatic breast cancer. MSI-high tumor supports immunotherapy with pembrolizumab. Recommended after progression on 2 prior line(s).",
+      "keywords": [
+        "metastatic breast cancer",
+        "checkpoint inhibitor",
+        "systemic therapy",
+        "immunotherapy",
+        "pembrolizumab",
+        "PD-1 inhibitor"
+      ]
+    },
+    {
+      "treatment": "Pembrolizumab (TMB\u2011high)",
+      "evidence_level": "III",
+      "recommendation_strength": "Weak",
+      "node_path": "Metastatic Breast Cancer Treatment Decision (ESMO 2021/24) -> Initial Biopsy, Biomarker & Staging Assessment (updated) -> Tumour\u2011agnostic Targeted Therapy -> High Tumour Mutation Burden",
+      "rationale": "Patient has TNBC metastatic breast cancer. MSI-high tumor supports immunotherapy with pembrolizumab. Recommended after progression on 2 prior line(s).",
+      "keywords": [
+        "metastatic breast cancer",
+        "checkpoint inhibitor",
+        "systemic therapy",
+        "immunotherapy",
+        "pembrolizumab",
+        "PD-1 inhibitor"
+      ]
+    }
+  ],
+  "total_recommendations": 4
+}

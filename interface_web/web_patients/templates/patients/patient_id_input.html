@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Entrer l'ID du patient</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      position: relative; /* Important pour le positionnement absolu */
+    }
+    .container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      text-align: center;
+      z-index: 1; /* Pour s'assurer qu'il est au-dessus des liens absolus */
+    }
+    h1 {
+      color: #00796b;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    input[type="submit"] {
+      background-color: #00796b;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    input[type="submit"]:hover {
+      background-color: #004d40;
+    }
+
+    /* Positionnement en haut à gauche pour le bouton Accueil */
+    .back-home {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      color: #00796b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .back-home:hover {
+      text-decoration: underline;
+    }
+
+    /* Logo en haut à droite */
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            height: 150px; /* Ajuste si nécessaire */
+        }
+  </style>
+</head>
+<body>
+
+<!-- Bouton Accueil en haut à gauche -->
+<a href="{% url 'home' %}" class="back-home">Accueil</a>
+
+<!-- Logo en haut à droite -->
+<img src="{% static 'logo_carjac.png' %}" alt="Logo CARJAC" class="logo">
+
+<div class="container">
+  <h1>Entrer l'ID du patient</h1>
+  <form method="post">
+    {% csrf_token %}
+    <input type="text" name="patient_id" placeholder="ex: MBC_001" required>
+    <br>
+    <input type="submit" value="Afficher les résultats">
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,237 @@
+{
+    "scenario_id": "esmo_metastatic_breast_cancer_enhanced_v2025",
+    "cancer_type": "breast",
+    "clinical_context": {
+      "stage": "metastatic",
+      "setting": "systemic_therapy",
+      "population": "all_metastatic_breast_cancer_patients"
+    },
+    "decision_tree": {
+      "root": {
+        "node_id": "mbc_root",
+        "title": "Metastatic Breast Cancer Treatment Decision (ESMO 2021/24)",
+        "node_type": "decision",
+        "conditions": [
+          {
+            "condition_id": "mbc_diagnosis",
+            "name": "Metastatic breast cancer confirmed",
+            "category": "diagnosis",
+            "value": "metastatic",
+            "operator": "="
+          }
+        ],
+        "children": [
+          {
+            "node_id": "mbc_biopsy_assessment",
+            "title": "Initial Biopsy, Biomarker & Staging Assessment (updated)",
+            "node_type": "action",
+            "actions": [
+              {
+                "action_id": "mbc_biopsy",
+                "action_type": "diagnostic",
+                "name": "Metastatic lesion biopsy incl. ER/PgR/HER2 re‑assessment",
+                "evidence_level": "I",
+                "recommendation_strength": "Strong"
+              },
+              {
+                "action_id": "mbc_staging",
+                "action_type": "diagnostic",
+                "name": "Baseline imaging (CT chest/abd, bone scan or PET‑CT; brain MRI if indicated)",
+                "evidence_level": "II",
+                "recommendation_strength": "Strong"
+              },
+              {
+                "action_id": "mbc_extended_biomarkers",
+                "action_type": "diagnostic",
+                "name": "Universal biomarkers gBRCA, PD‑L1 (TNBC), PIK3CA (ER+/HER2‑)",
+                "description": "Plus optional: ESR1, MSI, TMB, NTRK if therapy available",
+                "evidence_level": "I",
+                "recommendation_strength": "Strong"
+              }
+            ],
+            "children": [
+              {
+                "node_id": "mbc_subtype_classification",
+                "title": "Breast Cancer Subtype Classification",
+                "node_type": "decision",
+                "description": "Classify based on hormone receptors and HER2 status",
+                "children": [
+                  {
+                    "node_id": "mbc_luminal",
+                    "title": "Luminal Breast Cancer (ER+/HER2‑)",
+                    "node_type": "decision",
+                    "conditions": [
+                      {"condition_id":"er_positive","name":"ER positive","category":"biomarker","value":"positive"},
+                      {"condition_id":"her2_negative","name":"HER2 negative","category":"biomarker","value":"negative"}
+                    ],
+                    "children": [
+                      {
+                        "node_id": "luminal_biomarker_testing",
+                        "title": "Additional Biomarker Testing for Luminal BC (updated)",
+                        "node_type": "action",
+                        "actions": [
+                          {"action_id":"pik3ca_testing","action_type":"diagnostic","name":"PIK3CA mutation testing","evidence_level":"I","recommendation_strength":"Strong"},
+                          {"action_id":"brca_testing","action_type":"diagnostic","name":"Germline BRCA1/2 (±PALB2) testing","evidence_level":"I","recommendation_strength":"Strong"},
+                          {"action_id":"esr1_testing","action_type":"diagnostic","name":"ESR1 mutation testing (optional)","evidence_level":"II","recommendation_strength":"Moderate"}
+                        ],
+                        "children": [
+                          {
+                            "node_id": "luminal_metabolic_panel",
+                            "title": "Metabolic Panel prior to Alpelisib",
+                            "node_type": "action",
+                            "actions": [
+                              {"action_id":"hba1c","action_type":"lab_test","name":"Baseline HbA1c / fasting glucose","description":"Exclude uncontrolled diabetes before alpelisib","evidence_level":"I","recommendation_strength":"Strong"}
+                            ]
+                          },
+                          {
+                            "node_id": "luminal_second_line_v2",
+                            "title": "Second‑line After CDK4/6 Progression (enhanced)",
+                            "node_type": "decision",
+                            "conditions": [
+                              {"condition_id":"progressed_on_cdk46","name":"Progression on CDK4/6 + ET","category":"treatment_history","value":"true"}
+                            ],
+                            "children": [
+                              {
+                                "node_id": "luminal_pik3ca_mutant",
+                                "title": "PIK3CA‑mutant & HbA1c suitable",
+                                "node_type": "action",
+                                "conditions": [
+                                  {"condition_id":"pik3ca_mutation","name":"PIK3CA mutation","category":"biomarker","value":"mutant"},
+                                  {"condition_id":"hba1c_ok","name":"HbA1c < 8%","category":"lab_value","value":"suitable_for_alpelisib"}
+                                ],
+                                "actions": [
+                                  {"action_id":"alpelisib_fulvestrant","action_type":"drug_therapy","name":"Alpelisib + Fulvestrant","evidence_level":"I","recommendation_strength":"Moderate"}
+                                ]
+                              },
+                              {
+                                "node_id": "luminal_brca_palb2_mutant",
+                                "title": "Germline BRCA1/2 or PALB2 mutation",
+                                "node_type": "action",
+                                "conditions": [
+                                  {"condition_id":"brca_or_palb2","name":"gBRCA or gPALB2 mutant","category":"biomarker","value":"mutant"}
+                                ],
+                                "actions": [
+                                  {"action_id":"parp_inhibitor","action_type":"drug_therapy","name":"PARP inhibitor (olaparib/talazoparib)","evidence_level":"I","recommendation_strength":"Strong"}
+                                ]
+                              },
+                              {
+                                "node_id": "luminal_esr1_mutant",
+                                "title": "ESR1 mutation positive (no PIK3CA/BRCA)",
+                                "node_type": "action",
+                                "conditions": [
+                                  {"condition_id":"esr1_mut","name":"ESR1 mutation","category":"biomarker","value":"mutant"}
+                                ],
+                                "actions": [
+                                  {"action_id":"everolimus_fulvestrant","action_type":"drug_therapy","name":"Everolimus + Fulvestrant","evidence_level":"II","recommendation_strength":"Moderate"}
+                                ]
+                              },
+                              {
+                                "node_id": "luminal_everolimus_default",
+                                "title": "PIK3CA wild‑type & BRCA/PALB2 wild‑type",
+                                "node_type": "action",
+                                "actions": [
+                                  {"action_id":"everolimus_exemestane","action_type":"drug_therapy","name":"Everolimus + Exemestane","evidence_level":"I","recommendation_strength":"Moderate"}
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "node_id": "mbc_her2_positive",
+                    "title": "HER2‑Positive Breast Cancer",
+                    "node_type": "decision",
+                    "conditions": [
+                      {"condition_id":"her2_positive","name":"HER2 positive","category":"biomarker","value":"positive"}
+                    ],
+                    "children": [
+                      {
+                        "node_id": "her2_chemo_contra_hrneg",
+                        "title": "Chemotherapy Contraindicated & HR‑Negative",
+                        "node_type": "action",
+                        "conditions": [
+                          {"condition_id":"chemo_contraindicated","name":"Chemotherapy contraindicated","category":"contraindication","value":"present"},
+                          {"condition_id":"hr_negative","name":"Hormone receptor negative","category":"biomarker","value":"negative"}
+                        ],
+                        "actions": [
+                          {"action_id":"trastuzumab_monotherapy","action_type":"drug_therapy","name":"Trastuzumab ± Pertuzumab without chemo","evidence_level":"III","recommendation_strength":"Weak"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "node_id": "mbc_triple_negative",
+                    "title": "Triple‑Negative Breast Cancer (TNBC)",
+                    "node_type": "decision",
+                    "conditions": [
+                      {"condition_id":"tnbc_status","name":"Triple‑negative","category":"biomarker","value":"triple_negative"}
+                    ],
+                    "children": [
+                      {
+                        "node_id": "tnbc_second_line_v2",
+                        "title": "TNBC Second‑line (requires prior progression)",
+                        "node_type": "action",
+                        "conditions": [
+                          {"condition_id":"progression_on_first_line","name":"Progression after ≥1 prior line","category":"treatment_history","value":"true"}
+                        ],
+                        "actions": [
+                          {"action_id":"sacituzumab_govitecan","action_type":"drug_therapy","name":"Sacituzumab Govitecan","evidence_level":"I","recommendation_strength":"Strong"},
+                          {"action_id":"standard_chemo_tnbc","action_type":"drug_therapy","name":"Standard single‑agent chemo","evidence_level":"I","recommendation_strength":"Moderate"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "node_id": "mbc_tumour_agnostic",
+                "title": "Tumour‑agnostic Targeted Therapy",
+                "node_type": "decision",
+                "conditions": [
+                  {"condition_id":"exhausted_standard","name":"All subtype‑specific standard options exhausted","category":"treatment_history","value":"true"}
+                ],
+                "children": [
+                  {
+                    "node_id": "msi_high",
+                    "title": "MSI‑High / dMMR",
+                    "node_type": "action",
+                    "conditions": [
+                      {"condition_id":"msi_high","name":"Microsatellite instability‑high","category":"biomarker","value":"positive"}
+                    ],
+                    "actions": [
+                      {"action_id":"pembrolizumab_msi","action_type":"drug_therapy","name":"Pembrolizumab (tumour‑agnostic)","evidence_level":"II","recommendation_strength":"Moderate"}
+                    ]
+                  },
+                  {
+                    "node_id": "ntrk_fusion",
+                    "title": "NTRK Gene Fusion",
+                    "node_type": "action",
+                    "conditions": [
+                      {"condition_id":"ntrk_fusion","name":"NTRK fusion","category":"biomarker","value":"positive"}
+                    ],
+                    "actions": [
+                      {"action_id":"larotrectinib","action_type":"drug_therapy","name":"Larotrectinib or Entrectinib","evidence_level":"II","recommendation_strength":"Moderate"}
+                    ]
+                  },
+                  {
+                    "node_id": "tmb_high",
+                    "title": "High Tumour Mutation Burden",
+                    "node_type": "action",
+                    "conditions": [
+                      {"condition_id":"tmb_high","name":"TMB ≥10 mut/Mb","category":"biomarker","value":"high"}
+                    ],
+                    "actions": [
+                      {"action_id":"pembrolizumab_tmb","action_type":"drug_therapy","name":"Pembrolizumab (TMB‑high)","evidence_level":"III","recommendation_strength":"Weak"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+  

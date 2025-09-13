@@ -1,0 +1,43 @@
+{
+  "patient_id": "MBC_010",
+  "demographics": {
+    "age": 32,
+    "gender": "female",
+    "performance_status": 0,
+    "pregnancy_status": "pregnant_18_weeks"
+  },
+  "diagnosis": {
+    "cancer_type": "breast",
+    "stage": "IIIA",
+    "histology": "invasive_ductal_carcinoma",
+    "grade": 3
+  },
+  "biomarkers": {
+    "ER": "positive",
+    "PgR": "positive",
+    "HER2": "1_plus",
+    "PIK3CA": "wild_type",
+    "BRCA1": "wild_type",
+    "BRCA2": "wild_type",
+    "PALB2": "wild_type",
+    "ESR1": "wild_type",
+    "PD_L1": "not_tested",
+    "MSI": "stable",
+    "TMB": 4.0,
+    "NTRK": "negative"
+  },
+  "clinical_status": {
+    "No imminent organ failure": "stable"
+  },
+  "lab_values": {
+    "HbA1c": 5.0,
+    "fasting_glucose": 90,
+    "creatinine": 0.7,
+    "bilirubin": 0.8
+  },
+  "metastatic_sites": [],
+  "contraindications": [
+    "chemotherapy_first_trimester"
+  ],
+  "notes": "Early‑stage pregnancy‑associated breast cancer (PABC); HER2‑low category emerging but not represented in current decision tree."
+}

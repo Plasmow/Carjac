@@ -1,0 +1,48 @@
+{
+  "patient_id": "MBC_004",
+  "demographics": {
+    "age": 51,
+    "gender": "female",
+    "performance_status": 1
+  },
+  "diagnosis": {
+    "cancer_type": "breast",
+    "stage": "metastatic",
+    "histology": "invasive_lobular_carcinoma",
+    "grade": 2
+  },
+  "biomarkers": {
+    "ER": "positive",
+    "PgR": "positive",
+    "HER2": "negative",
+    "PIK3CA": "wild_type",
+    "BRCA1": "wild_type",
+    "BRCA2": "wild_type",
+    "PALB2": "mutant",
+    "ESR1": "mutant",
+    "PD_L1": "negative",
+    "MSI": "stable",
+    "TMB": 5.7,
+    "NTRK": "negative"
+  },
+  "treatment_history": [
+    {
+      "line": 1,
+      "regimen": "palbociclib + letrozole",
+      "response": "stable_disease",
+      "duration_months": 18,
+      "progression": true
+    }
+  ],
+  "lab_values": {
+    "HbA1c": 5.8,
+    "fasting_glucose": 98,
+    "creatinine": 0.7,
+    "bilirubin": 1.0
+  },
+  "metastatic_sites": [
+    "bone",
+    "soft_tissue"
+  ],
+  "contraindications": []
+}

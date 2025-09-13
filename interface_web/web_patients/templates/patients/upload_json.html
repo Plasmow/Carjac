@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Envoyer un fichier JSON</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Positionnement des éléments fixes */
+        .back-home {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            color: #00796b;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .back-home:hover {
+            text-decoration: underline;
+        }
+
+        /* Logo en haut à droite */
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            height: 150px; /* Ajuste si nécessaire */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .content-box {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 30px 40px;
+            text-align: center;
+            width: 400px;
+        }
+
+        h1 {
+            color: #00796b;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #00796b;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #004d40;
+        }
+
+        a.return-link {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #00796b;
+            font-weight: bold;
+        }
+
+        a.return-link:hover {
+            text-decoration: underline;
+        }
+
+        .error {
+            color: #e53935;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Bouton Accueil en haut à gauche -->
+<a href="{% url 'home' %}" class="back-home">Accueil</a>
+
+<!-- Logo en haut à droite -->
+<img src="{% static 'logo_carjac.png' %}" alt="Logo CARJAC" class="logo" >
+
+
+<div class="container">
+    <div class="content-box">
+        <h1>Envoyer un fichier JSON</h1>
+
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+
+        <form action="{% url 'upload_json' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file" name="json_file" accept=".json" required>
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+</div>
+</body>
+</html>

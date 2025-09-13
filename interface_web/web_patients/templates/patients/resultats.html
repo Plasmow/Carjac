@@ -1,0 +1,189 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Résultats Patient</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+      margin: 0;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin: 50px auto;
+      max-width: 800px;
+    }
+
+    h1, h2 {
+      color: #00796b;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #00796b;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #00796b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-home:hover {
+      text-decoration: underline;
+    }
+
+    .recommandation {
+    word-wrap: break-word;
+    max-width: 100%;
+    }
+
+    .docs li {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    margin-bottom: 20px;
+    }
+
+    .section {
+    max-width: 90%;
+    margin: auto;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      height: 100px;
+    }
+
+    .recommandation {
+      margin-bottom: 40px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .recommandation h3 {
+      margin-top: 0;
+      color: #004d40;
+      font-size: 1.3em;
+    }
+
+    .recommandation p {
+      margin: 5px 0;
+    }
+
+    .interaction li, .docs li {
+      margin: 10px 0;
+    }
+
+    .medicament {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #1976d2;
+    }
+
+    .traitement-titre {
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+  </style>
+</head>
+<body>
+
+<a href="{% url 'home' %}" class="back-home">Accueil</a>
+<img src="{% static 'logo_carjac.png' %}" alt="Logo CARJAC" class="logo">
+
+<div class="container">
+  <h2>Résultats des recommandations</h2>
+
+  {% if recommandations %}
+    {% for rec in recommandations %}
+      <div class="recommandation">
+        <h3>Traitement {{ forloop.counter }} : {{ rec.treatment_title }} 🧬</h3>
+        <p><b>Niveau de preuve :</b> {{ rec.evidence_level }}</p>
+        <p><b>Force de la recommandation :</b> {{ rec.recommendation_strength }}</p>
+        <p><b>Raisonnement :</b> {{ rec.rationale }}</p>
+
+        <!-- Gènes impliqués -->
+        <br>
+        <p><b>Gènes impliqués :</b></p>
+        {% if rec.description_genes %}
+          <ul>
+            {% for gene in rec.description_genes %}
+              <li><b>{{ gene.gene }}</b> ({{ gene.type }}) – {{ gene.desc }}</li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p>Aucun gène identifié.</p>
+        {% endif %}
+
+        <!-- Interactions gènes-médicaments -->
+         <br>
+        <p><b>Interactions gènes-médicaments :</b></p>
+        {% if rec.interaction %}
+          <ul class="interaction">
+            {% for interaction in rec.interaction %}
+              {% for drug, details in interaction.items %}
+                <li>
+                  <b>Médicament :</b> {{ drug }}<br>
+                  <b>Gène :</b> {{ details.gene }}<br>
+                  <b>Type :</b> {{ details.type }}<br>
+                  <b>Source :</b> {{ details.source }}<br>
+                  <b>Date :</b> {{ details.date }}
+                </li>
+              {% endfor %}
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p>Aucune interaction trouvée.</p>
+        {% endif %}
+
+        <!-- Documents pertinents -->
+         <br>
+        <p><b>Documents pertinents :</b></p>
+        {% if rec.docs %}
+          <ul class="docs">
+            {% for doc in rec.docs %}
+                <li>
+                    <b>Titre :</b> {{ doc.title }}<br>
+                    <b>Score :</b> {{ doc.score }}<br>
+                    <b>Auteurs :</b> {{ doc.doc_author }}<br>
+                    <b>Date :</b> {{ doc.date }}<br>
+                    <b>Résumé :</b> {{ doc.abstract }}
+                    <br><br><br>
+                </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p>Aucun document pertinent.</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>Aucune recommandation trouvée.</p>
+  {% endif %}
+</div>
+
+</body>
+</html>

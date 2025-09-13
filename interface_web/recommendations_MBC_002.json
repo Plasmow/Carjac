@@ -1,0 +1,45 @@
+{
+  "patient_id": "MBC_002",
+  "subtype": "TNBC",
+  "biomarker_summary": {
+    "ER": "negative",
+    "PgR": "negative",
+    "HER2": "negative",
+    "PIK3CA": "wild_type",
+    "BRCA1": "mutant",
+    "BRCA2": "wild_type",
+    "PALB2": "wild_type",
+    "MSI": "stable",
+    "TMB": 8.5
+  },
+  "treatment_history_summary": "1 prior line(s), last: carboplatin + paclitaxel",
+  "recommendations": [
+    {
+      "treatment": "Sacituzumab Govitecan",
+      "evidence_level": "I",
+      "recommendation_strength": "Strong",
+      "node_path": "Metastatic Breast Cancer Treatment Decision (ESMO 2021/24) -> Initial Biopsy, Biomarker & Staging Assessment (updated) -> Breast Cancer Subtype Classification -> Triple\u00e2\u20ac\u2018Negative Breast Cancer (TNBC) -> TNBC Second\u00e2\u20ac\u2018line (requires prior progression)",
+      "rationale": "Patient has TNBC metastatic breast cancer. Recommended after progression on 1 prior line(s).",
+      "keywords": [
+        "metastatic breast cancer",
+        "sacituzumab govitecan",
+        "antibody drug conjugate",
+        "systemic therapy",
+        "Trop-2",
+        "ADC"
+      ]
+    },
+    {
+      "treatment": "Standard single\u00e2\u20ac\u2018agent chemo",
+      "evidence_level": "I",
+      "recommendation_strength": "Moderate",
+      "node_path": "Metastatic Breast Cancer Treatment Decision (ESMO 2021/24) -> Initial Biopsy, Biomarker & Staging Assessment (updated) -> Breast Cancer Subtype Classification -> Triple\u00e2\u20ac\u2018Negative Breast Cancer (TNBC) -> TNBC Second\u00e2\u20ac\u2018line (requires prior progression)",
+      "rationale": "Patient has TNBC metastatic breast cancer. Recommended after progression on 1 prior line(s).",
+      "keywords": [
+        "systemic therapy",
+        "metastatic breast cancer"
+      ]
+    }
+  ],
+  "total_recommendations": 2
+}

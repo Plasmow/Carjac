@@ -1,0 +1,75 @@
+[
+    {
+        "treatment_title": "Everolimus + Exemestane",
+        "evidence_level": "I",
+        "recommendation_strength": "Moderate",
+        "rationale": "Patient has Luminal metastatic breast cancer. Recommended after progression on 1 prior line(s).",
+        "description_genes": [
+            {
+                "gene": "PIK3CA",
+                "type": "mutant",
+                "desc": "phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha"
+            }
+        ],
+        "interaction": [
+            {
+                "Everolimus": {
+                    "gene": "PIK3CA",
+                    "type": "NULL",
+                    "source": "ClearityFoundationBiomarkers",
+                    "date": "26-Jul-13"
+                }
+            }
+        ],
+        "docs": [
+            {
+                "traitement": "Alpelisib + Fulvestrant",
+                "abstract": [
+                    "Aucun abstract trouvé.",
+                    "ABSTRACT Introduction Neoadjuvant therapy has become a standard treatment for patients with stage II/III HER2 positive and triple negative breast cancer, and in well-­selected patients with locally advanced and borderline resectable high risk, luminal B breast cancer. Side effects of neoadjuvant therapy, such as fatigue, cardiotoxicity, neurotoxicity, anxiety, insomnia, vasomotor symptoms, gastrointestinal disturbance as well as a raft of immune-­related adverse events, may impact treatment tolerance, long-­term outcomes, and quality of life. Providing early supportive care prior to surgery (typically termed ‘prehabilitation’) may mitigate these side effects and improve quality of life. During our codesign of the intervention, consumers and...",
+                    "Abstract IMPORTANCE—Estrogen receptor-positive (ER+) tumors of the breast are generally highly responsive to endocrine treatment. Although endocrine therapy is the mainstay of adjuvant treatment for ER+ breast cancer, the role of endocrine therapy in the neoadjuvant setting is unclear. Corresponding Author: Aditya Bardia, MD, MPH, Massachusetts General Hospital Cancer Center, Harvard Medical School, 10 N Grove St, Lawrence House 304, Boston, MA 02114 (bardia.aditya@mgh.harvard.edu). Author Contributions: Drs Spring and Bardia had full access to all the data in the study and take responsibility for the integrity of the data and the accuracy of the data analysis. Study concept and design:...",
+                    "Aucun abstract trouvé.",
+                    "Abstract Introduction: Patients with hormone receptor-positive/HER2-negative (HR+/HER2−) metastatic breast cancer have benefitted from treatment with palbociclib, a cyclin-dependent kinase (CDK) 4/6 inhibitor capable of selectively targeting mechanisms of cell cycle progression that contribute to tumor cell proliferation. Palbociclib use in this setting demonstrates improved progression-free survival when given in combination with aromatase inhibitors or fulvestrant. Areas covered: The authors describe the current state of research surrounding palbociclib use in breast cancer, present evidence supporting a role for palbociclib in additional subtypes of metastatic breast cancer such as HER2-positive (HER2+) and triple-negative, report ongoing clinical trials aimed at expanding the scope..."
+                ],
+                "date": [
+                    "21 July 2024",
+                    "09 October 2023",
+                    "2016",
+                    "Aucune date trouvée.",
+                    "2021"
+                ],
+                "doc_name": [
+                    "Xin Xiong1 et al.",
+                    "Shelley Kay et al.",
+                    "Neoadjuvant Endocrine Therapy for Estrogen Receptor-Positive Breast Cancer: A Systematic Review and Meta-analysis Laura M. Spring et al.",
+                    "Edinburgh Research Explorer Circulating tumour DNA analysis to direct therapy in advanced breast cancer (plasmaMATCH): a multicentre et al.",
+                    "Georgetown University et al."
+                ]
+            },
+            {
+                "traitement": "Everolimus + Exemestane",
+                "abstract": [
+                    "Abstract Purpose PI3K/AKT pathway alterations are frequent in hormone receptor-positive (HR+) breast cancers. IPATunity130 Cohort B investigated ipatasertib–paclitaxel in PI3K pathway-mutant HR+ unresectable locally advanced/metastatic breast cancer (aBC). Methods Cohort B of the randomized, double-blind, placebo-controlled, phase 3 IPATunity130 trial enrolled patients with HR+ HER2-negative PIK3CA/AKT1/PTEN-altered measurable aBC who were considered inappropriate for endocrine-based therapy (demonstrated insensitivity to endocrine therapy or visceral crisis) and were candidates for taxane monotherapy. Patients with prior chemotherapy for aBC or relapse < 1 year since (neo)adjuvant chemotherapy were ineligible. Patients were randomized 2:1 to ipatasertib (400 mg, days 1–21) or placebo, plus paclitaxel (80...",
+                    "Aucun abstract trouvé.",
+                    "A B S T R A C T During the past recent years, various therapies emerged in the era of breast cancer. Breast cancer is a hetero- geneous disease in which genetic and environmental factors are involved. Breast cancer stem cells (BCSCs) are the main player in the aggressiveness of different tumors and also, these cells are the main challenge in cancer treatment. Moreover, the major obstacle to achieve an effective treatment is resistance to therapies. There are various types of treatment for breast cancer (BC) patients. Therefore, in this review, we present the current treatments, novel approaches such as...",
+                    "Abstract: E2F transcription factors play critical roles in the cell cycle. Therefore, their activity is expected to reﬂect tumor aggressiveness and responsiveness to therapy. We scored 3905 tumors of nine breast cancer cohorts for this activity based on their gene expression for the Hallmark E2F targets gene set. As expected, tumors with a high score had an increased expression of cell proliferation-related genes. A high score was signiﬁcantly associated with shorter patient survival, greater MKI67 expression, histological grade, stage, and genomic aberrations. Furthermore, metastatic tumors had higher E2F scores than the primary tumors from which they arose. Although tumors with...",
+                    "Aucun abstract trouvé."
+                ],
+                "date": [
+                    "22 April 2021",
+                    "21 July 2024",
+                    "19 February 2020",
+                    "22 May 2020",
+                    "22 May 2017"
+                ],
+                "doc_name": [
+                    "Aucun auteur trouvé.",
+                    "Xin Xiong1 et al.",
+                    "Direct International Immunopharmacology journal homepage: www.elsevier.com/locate/intimp Breast cancer: Biology et al.",
+                    "Article The E2F Pathway Score as a Predictive Biomarker of Response to Neoadjuvant Therapy in ER+/HER2− Breast Cancer Masanori Oshi 1 et al.",
+                    "Breast Cancer (ML Telli et al."
+                ]
+            }
+        ]
+    }
+]

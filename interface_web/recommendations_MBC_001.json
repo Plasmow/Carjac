@@ -1,0 +1,53 @@
+{
+  "patient_id": "MBC_001",
+  "subtype": "Luminal",
+  "biomarker_summary": {
+    "ER": "positive",
+    "PgR": "positive",
+    "HER2": "negative",
+    "PIK3CA": "mutant",
+    "BRCA1": "wild_type",
+    "BRCA2": "wild_type",
+    "PALB2": "wild_type",
+    "MSI": "stable",
+    "TMB": 3.2
+  },
+  "treatment_history_summary": "1 prior line(s), last: CDK4/6 inhibitor + aromatase inhibitor",
+  "recommendations": [
+    {
+      "treatment": "Alpelisib + Fulvestrant",
+      "evidence_level": "I",
+      "recommendation_strength": "Moderate",
+      "node_path": "Metastatic Breast Cancer Treatment Decision (ESMO 2021/24) -> Initial Biopsy, Biomarker & Staging Assessment (updated) -> Breast Cancer Subtype Classification -> Luminal Breast Cancer (ER+/HER2\u00e2\u20ac\u2018) -> Additional Biomarker Testing for Luminal BC (updated) -> Second\u00e2\u20ac\u2018line After CDK4/6 Progression (enhanced) -> PIK3CA\u00e2\u20ac\u2018mutant & HbA1c suitable",
+      "rationale": "Patient has Luminal metastatic breast cancer. Recommended after progression on 1 prior line(s).",
+      "keywords": [
+        "selective estrogen receptor degrader",
+        "alpelisib",
+        "systemic therapy",
+        "PIK3CA inhibitor",
+        "PI3K inhibitor",
+        "metastatic breast cancer",
+        "fulvestrant",
+        "SERD",
+        "combination therapy"
+      ]
+    },
+    {
+      "treatment": "Everolimus + Exemestane",
+      "evidence_level": "I",
+      "recommendation_strength": "Moderate",
+      "node_path": "Metastatic Breast Cancer Treatment Decision (ESMO 2021/24) -> Initial Biopsy, Biomarker & Staging Assessment (updated) -> Breast Cancer Subtype Classification -> Luminal Breast Cancer (ER+/HER2\u00e2\u20ac\u2018) -> Additional Biomarker Testing for Luminal BC (updated) -> Second\u00e2\u20ac\u2018line After CDK4/6 Progression (enhanced) -> PIK3CA wild\u00e2\u20ac\u2018type & BRCA/PALB2 wild\u00e2\u20ac\u2018type",
+      "rationale": "Patient has Luminal metastatic breast cancer. Recommended after progression on 1 prior line(s).",
+      "keywords": [
+        "mTOR inhibitor",
+        "aromatase inhibitor",
+        "everolimus",
+        "systemic therapy",
+        "metastatic breast cancer",
+        "exemestane",
+        "combination therapy"
+      ]
+    }
+  ],
+  "total_recommendations": 2
+}

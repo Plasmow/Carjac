@@ -1,0 +1,261 @@
+{
+    "traitement 0": {
+        "treatment_title": "Sacituzumab Govitecan",
+        "evidence_level": "I",
+        "recommendation_strength": "Strong",
+        "rationale": "Patient has TNBC metastatic breast cancer. Recommended after progression on 2 prior line(s).",
+        "description_genes": [
+            {
+                "gene": "BRCA2",
+                "type": "wild_type",
+                "desc": "BRCA2 DNA repair associated"
+            },
+            {
+                "gene": "BRCA1",
+                "type": "wild_type",
+                "desc": "BRCA1 DNA repair associated"
+            }
+        ],
+        "interaction": [
+            {
+                "Sacituzumab Govitecan": {
+                    "gene": "BRCA1",
+                    "type": "NULL",
+                    "source": "PharmGKB",
+                    "date": "4/5/24"
+                }
+            }
+        ],
+        "docs": [
+            {
+                "traitement": "Sacituzumab Govitecan",
+                "doc_author": "Prarthna V Bhardwaj et al.",
+                "date": "Oct 2023",
+                "abstract": "For decades, chemotherapy has been the mainstay of breast cancer treatment. Novel therapies are expanding the therapeutic options and altering the treatment algorithms to manage this disease. The use and approval of immune checkpoint inhibitors (ICIs) and antibody-drug conjugates (ADCs) represent a few areas of progress. These therapies initially gained attention in the metastatic setting but have subsequently found a role in early-stage breast cancer. Although human epidermal growth factor receptor 2 (HER2) is at the center of ADC development, other surface antigens with a differential expression between tumor and normal cells may be appropriate for ADC targeting. This has led to the discovery of new ADCs targeting other receptors, including TROP-2, HER-3, and LIV-1, to name a few. Similarly, the addition of pembrolizumab in treating early-stage triple-negative breast cancer has led to exploring other ICIs in this setting. However, it has also raised important scientific questions regarding optimal patient selection, biomarkers that predict the success of ICIs, ideal chemotherapy partners, and the financial implications of bringing newer therapies to the forefront. In this review, we discuss the evolving landscape of ICIs and ADCs in managing early-stage breast cancer and provide an overview of potential future advancement in the field.",
+                "title": "The Evolving Landscape of Immune Checkpoint Inhibitors and Antibody Drug Conjugates in the Treatment",
+                "score": 0.9569627070622382
+            },
+            {
+                "traitement": "Sacituzumab Govitecan",
+                "doc_author": "Yue Shi et al.",
+                "date": "Jul 2024",
+                "abstract": "HER2-low triple-negative breast cancer (TNBC) accounted for up to 34%-39% of primary TNBC and 22.2%-32% of metastatic TNBC. Our study aims to explore the relationship between HER2 expression and clinicopathological characteristics, analyze the impact of HER2 expression on the pathological complete response (pCR) to neoadjuvant chemotherapy (NAC) in TNBC.",
+                "title": "Impact of HER2 status on clinicopathological characteristics and pathological complete response to n",
+                "score": 0.9365695174947539
+            },
+            {
+                "traitement": "Sacituzumab Govitecan",
+                "doc_author": "Xin Xiong et al.",
+                "date": "Feb 2025",
+                "abstract": "Breast cancer, characterized by unique epidemiological patterns and significant heterogeneity, remains one of the leading causes of malignancy-related deaths in women. The increasingly nuanced molecular subtypes of breast cancer have enhanced the comprehension and precision treatment of this disease. The mechanisms of tumorigenesis and progression of breast cancer have been central to scientific research, with investigations spanning various perspectives such as tumor stemness, intra-tumoral microbiota, and circadian rhythms. Technological advancements, particularly those integrated with artificial intelligence, have significantly improved the accuracy of breast cancer detection and diagnosis. The emergence of novel therapeutic concepts and drugs represents a paradigm shift towards personalized medicine. Evidence suggests that optimal diagnosis and treatment models tailored to individual patient risk and expected subtypes are crucial, supporting the era of precision oncology for breast cancer. Despite the rapid advancements in oncology and the increasing emphasis on the clinical precision treatment of breast cancer, a comprehensive update and summary of the panoramic knowledge related to this disease are needed. In this review, we provide a thorough overview of the global status of breast cancer, including its epidemiology, risk factors, pathophysiology, and molecular subtyping. Additionally, we elaborate on the latest research into mechanisms contributing to breast cancer progression, emerging treatment strategies, and long-term patient management. This review offers valuable insights into the latest advancements in Breast Cancer Research, thereby facilitating future progress in both basic research and clinical application.",
+                "title": "breast cancer pathogenesis and treatments",
+                "score": 0.930794805879834
+            },
+            {
+                "traitement": "Sacituzumab Govitecan",
+                "doc_author": "Elisa Agostinetto et al.",
+                "date": "Jun 2022",
+                "abstract": "Triple negative breast cancer (TNBC) is an area of high unmet medical need in terms of new effective treatment strategies. Although breast cancer is traditionally considered a 'cold' tumor type, TNBC is the most appropriate subtype for immunotherapeutic strategies; this is due to the high level of tumor infiltrating lymphocytes, PD-L1 expression, and tumor mutational burden compared to other breast cancer subtypes.",
+                "title": "Progress and pitfalls in the use of immunotherapy for patients with triple negative breast cancer",
+                "score": 0.9274942641212766
+            },
+            {
+                "traitement": "Sacituzumab Govitecan",
+                "doc_author": "Mirosława Püsküllüoğlu et al.",
+                "date": "2024",
+                "abstract": "Primary neuroendocrine neoplasms of the breast (Br-NENs) are rare. The classification has been updated in recent years making interpretation of the data published challenging. It is unclear whether neuroendocrine differentiation is associated with poorer prognosis and what treatment approaches should be applied.",
+                "title": "Non metastatic primary neuroendocrine neoplasms of the breast a reference cancer centers experience ",
+                "score": 0.8963712534382055
+            }
+        ]
+    },
+    "traitement 1": {
+        "treatment_title": "Standard singleâ€‘agent chemo",
+        "evidence_level": "I",
+        "recommendation_strength": "Moderate",
+        "rationale": "Patient has TNBC metastatic breast cancer. Recommended after progression on 2 prior line(s).",
+        "description_genes": [
+            {
+                "gene": "BRCA2",
+                "type": "wild_type",
+                "desc": "BRCA2 DNA repair associated"
+            },
+            {
+                "gene": "BRCA1",
+                "type": "wild_type",
+                "desc": "BRCA1 DNA repair associated"
+            }
+        ],
+        "interaction": [
+            {}
+        ],
+        "docs": [
+            {
+                "traitement": "Standard singleâ€‘agent chemo",
+                "doc_author": "Nickolas Stabellini et al.",
+                "date": "Oct 2023",
+                "abstract": "PREDICT is an online prognostication tool derived from breast cancer registry information on approximately 6,000 women treated in the United Kingdom that estimates the postsurgical treatment benefit of surgery alone, chemotherapy, trastuzumab, endocrine therapy, and/or adjuvant bisphosphonates in early-stage breast cancer. Our aim was to validate the PREDICT algorithm in predicting 5- and 10-year overall survival (OS) probabilities using real-world outcomes among US patients with breast cancer.",
+                "title": "Validation of the PREDICT Prognostication Tool in US Patients With Breast Cancer",
+                "score": 1.0
+            },
+            {
+                "traitement": "Standard singleâ€‘agent chemo",
+                "doc_author": "M J Duffy et al.",
+                "date": "Apr 2017",
+                "abstract": "Biomarkers play an essential role in the management of patients with invasive breast cancer. For selecting patients likely to respond to endocrine therapy, both oestrogen receptors (ERs) and progesterone receptors (PRs) should be measured on all newly diagnosed invasive breast cancers. On the other hand, for selecting likely response to all forms of anti-HER2 therapy (trastuzumab, pertuzumab, lapatinib or ado-trastuzumab emtansine), determination of HER2 expression or gene copy number is mandatory. Where feasible, measurement of ER, PR and HER2 should be performed on recurrent lesions and the primary invasive tumour. Although methodological problems exist in the determination of Ki67, because of its clearly established clinical value, wide availability and low costs relative to the available multianalyte signatures, Ki67 may be used for determining prognosis, especially if values are low or high. In oestrogen receptor (ER)-positive, HER2-negative, lymph node-negative patients, multianalyte tests such as urokinase plasminogen activator (uPA)-PAI-1, Oncotype DX, MammaPrint, EndoPredict, Breast Cancer Index (BCI) and Prosigna (PAM50) may be used to predict outcome and aid adjunct therapy decision-making. Oncotype DX, MammaPrint, EndoPredict and Prosigna may be similarly used in patients with 1-3 metastatic lymph nodes. All laboratories measuring biomarkers for patient management should use analytically and clinically validated assays, participate in external quality assurance programs, have established assay acceptance and rejection criteria, perform regular audits and be accredited by an appropriate organisation.",
+                "title": "Clinical use of biomarkers in breast cancer updated guidelines from the european group on tumor markers",
+                "score": 1.0
+            },
+            {
+                "traitement": "Standard singleâ€‘agent chemo",
+                "doc_author": "Sathya Narayanan et al.",
+                "date": "Jun 2024",
+                "abstract": "There has been significant progress made in developing novel targeted therapies in the neoadjuvant setting for non-metastatic HER2-positive breast cancer, which may be used in combination with conventional chemotherapy to optimise pathological responses at surgery. However, these therapies, particularly the chemotherapeutic components, may portend significant and long-lasting toxicity. Hence, de-escalation of treatment intensity has been an area of interest and was evaluated in the phase II NeoSphere study. Herein, we report the real-world pathological and survival outcomes from neoadjuvant taxane and dual HER2 blockade recorded at our centre.",
+                "title": "Pathological and clinical outcomes following neoadjuvant dual HER2 therapy for early stage breast ca",
+                "score": 1.0
+            },
+            {
+                "traitement": "Standard singleâ€‘agent chemo",
+                "doc_author": "Andrea Nicolini et al.",
+                "date": "Oct 2018",
+                "abstract": "Following a diagnosis of breast cancer, the most immediate challenges in patient management are the determination of prognosis and identification of the most appropriate adjuvant systemic therapy. Determining prognosis can best be addressed with a combination of traditional clinicopathological prognostic factors, biomarkers such as HER2/neu and specific multigene genes tests. Amongst the best validated prognostic multigene tests are uPA/PAI1, Oncotype DX and MammaPrint. Oncotype DX and MammaPrint, may be used for predicting outcome and aiding adjunct therapy decision making in patients with ER-positive, HER2-negative breast cancers that are either lymph node-negative or node positive (1-3 metastatic nodes), while uPA/PAI-1 may be similarly used in ER-positive, lymph node-negative patients. For selecting likely response to endocrine therapy, both estrogen receptors (ER) and progesterone receptors (PR) should be measured. On the other hand, for identifying likely response to anti-HER2 therapy, determination of HER2 gene amplification or overexpression is necessary. To identify new prognostic and predictive biomarkers for breast cancer, current research is focusing on tumor and circulating DNA (ctDNA) and RNA (e.g., micro RNAs) and circulating tumor cells. A promising ctDNA biomarker is the mutational status of ER (ESR1) for predicting the emergence of resistance to aromatase inhibitors. Challenges for future research include the identification of biomarkers for predicting response to radiotherapy and specific forms of chemotherapy.",
+                "title": "Prognostic and predictive biomarkers in breast cancer past present and future",
+                "score": 1.0
+            },
+            {
+                "traitement": "Standard singleâ€‘agent chemo",
+                "doc_author": "Elisa Agostinetto et al.",
+                "date": "Aucune date trouvée.",
+                "abstract": "Triple negative breast cancer (TNBC) is an area of high unmet medical need in terms of new effective treatment strategies. Although breast cancer is traditionally considered a 'cold' tumor type, TNBC is the most appropriate subtype for immunotherapeutic strategies; this is due to the high level of tumor infiltrating lymphocytes, PD-L1 expression, and tumor mutational burden compared to other breast cancer subtypes.",
+                "title": "Progress and pitfalls in the use of immunotherapy for patients with triple negative breast cancer",
+                "score": 1.0
+            }
+        ]
+    },
+    "traitement 2": {
+        "treatment_title": "Pembrolizumab (tumourâ€‘agnostic)",
+        "evidence_level": "II",
+        "recommendation_strength": "Moderate",
+        "rationale": "Patient has TNBC metastatic breast cancer. MSI-high tumor supports immunotherapy with pembrolizumab. Recommended after progression on 2 prior line(s).",
+        "description_genes": [
+            {
+                "gene": "BRCA2",
+                "type": "wild_type",
+                "desc": "BRCA2 DNA repair associated"
+            },
+            {
+                "gene": "BRCA1",
+                "type": "wild_type",
+                "desc": "BRCA1 DNA repair associated"
+            }
+        ],
+        "interaction": [
+            {}
+        ],
+        "docs": [
+            {
+                "traitement": "Pembrolizumab (tumourâ€‘agnostic)",
+                "doc_author": "Lucie Heczko et al.",
+                "date": "Jul 2024",
+                "abstract": "Colorectal cancer is still the second leading cause of cancer-related deaths and thus biomarkers allowing prediction of the resistance of patients to therapy and estimating their prognosis are needed. We designed a panel of 558 genes with pharmacogenomics records related to 5-fluorouracil resistance, genes important for sensitivity to other frequently used drugs, major oncodrivers, and actionable genes. We performed a target enrichment sequencing of DNA from tumors and matched blood samples of patients, and compared the results with patient prognosis stratified by systemic adjuvant chemotherapy.",
+                "title": "Targeted panel sequencing of pharmacogenes and oncodrivers in colorectal cancer patients reveals gen",
+                "score": 1.0
+            },
+            {
+                "traitement": "Pembrolizumab (tumourâ€‘agnostic)",
+                "doc_author": "Elisa Agostinetto et al.",
+                "date": "Jun 2022",
+                "abstract": "Triple negative breast cancer (TNBC) is an area of high unmet medical need in terms of new effective treatment strategies. Although breast cancer is traditionally considered a 'cold' tumor type, TNBC is the most appropriate subtype for immunotherapeutic strategies; this is due to the high level of tumor infiltrating lymphocytes, PD-L1 expression, and tumor mutational burden compared to other breast cancer subtypes.",
+                "title": "Progress and pitfalls in the use of immunotherapy for patients with triple negative breast cancer",
+                "score": 1.0
+            },
+            {
+                "traitement": "Pembrolizumab (tumourâ€‘agnostic)",
+                "doc_author": "Yoshihito Kano et al.",
+                "date": "Jul 2023",
+                "abstract": "Colorectal cancer (CRC) is the second most common cause of cancer-related deaths worldwide. The 5-year survival rate after curative resection is almost 80%, however, it is still less than satisfactory for metastatic CRC (mCRC). The combination approach including surgery, chemotherapy, molecular targeted therapy, and immunotherapy is a promising strategy due to its synergistic anticancer effect. Moreover, circulating tumor DNA (ctDNA) analysis has been reported to stratify the post-operative risk of recurrence, thus providing clinically valuable information for deciding to conduct adjuvant chemotherapy. Furthermore, multiple new drugs that potentially target undruggable genes, including",
+                "title": "Strategic Insight into the Combination Therapies for Metastatic Colorectal Cancer",
+                "score": 1.0
+            },
+            {
+                "traitement": "Pembrolizumab (tumourâ€‘agnostic)",
+                "doc_author": "Dongliang Bian et al.",
+                "date": "Apr 2025",
+                "abstract": "Aumolertinib, a third-generation epidermal growth factor receptor tyrosine kinase inhibitor (EGFR-TKI), is widely utilized for advanced EGFR-mutant non-small cell lung cancer patients (NSCLCm). This single-arm, phase II trial (NCT04685070) assessed the feasibility of neoadjuvant Aumolertinib for unresectable stage III NSCLCm. Fifty-six patients were enrolled, with 51 participants receiving neoadjuvant Aumolertinib (110 mg/day, orally) and forming the intention-to-treat population. The primary endpoint was objective response rate (ORR). Secondary endpoints included major pathological response (MPR) rate, pathological complete response (pCR) rate, complete (R0) resection rate, event-free survival (EFS), overall survival (OS), and treatment-related adverse events (TRAEs). The ORR was 70.6% (95% confidence interval: 58%-84%), meeting the pre-specified primary endpoint. Additionally, twenty-three (45.1%) participants converted into resectable disease and underwent surgery. Among them, R0 resection, MPR and pCR rates were 100%, 21.7%, and 13.0%, respectively. The median EFS and OS were not reached. While, the 1- and 2-year EFS rates were 88.2% and 58.8%, respectively. Fatigue (49.0%), alanine aminotransferase concentration elevation (39.2%), and rash (35.3%) were the most common treatment-related adverse events (TRAEs). Grade 3/4 TRAEs occurred in 5 patients (9.8%), and no grade 5 TRAE was recorded. RNA-sequencing based analysis revealed increased infiltration of CD8 + T-cells in post-treatment tumors compared to baseline, particularly in responsive and Ex19-Del mutation tumors. Collectively, neoadjuvant Aumolertinib showed promising efficacy and a surgical conversion rate with a tolerable safety profile for unresecable NSCLCm in stage III, potentially involved in the remodeling of tumor microenvironment.",
+                "title": "Neoadjuvant Aumolertinib for unresectable stage III EGFR mutant non small cell lung cancer a single ",
+                "score": 1.0
+            },
+            {
+                "traitement": "Pembrolizumab (tumourâ€‘agnostic)",
+                "doc_author": "Paulo Luz et al.",
+                "date": "May 2025",
+                "abstract": "In HER2+ breast cancer (BC), neoadjuvant therapy represents an ideal scenario for translational research, considering pathological complete response (pCR) as an endpoint. In these patients, achieving pCR after neoadjuvant therapy is associated with a better prognosis. However, biomarkers are needed to tailor optimal treatment for each patient. Evaluating tumour-infiltrating lymphocytes (TILs) has gained attention in predicting pCR. In the context of metastatic disease, TILs also appear to play a role in predicting outcomes. The interaction between the presence of TILs and reactive oxygen species (ROS) remains an area to be explored. ROS are critical for tumour cell homeostasis, and different levels can trigger differential biological responses in cancer cells and their microenvironment. Nevertheless, the influence of ROS on treatment efficacy and prognosis in patients with HER2+ BC remains to be elucidated. In this article, we reviewed the interplay between treatment response, immune system activation, and ROS production in HER2+ BC and suggested novel areas of intervention and research. We also present a bioinformatic analysis demonstrating that the altered expression of several redox-related genes could be associated with the prevalence of immune cell populations in the tumour microenvironment and with patient survival. New biomarkers are thus suggested and should be further explored to tailor the best treatment to each patient.",
+                "title": "Interaction between redox regulation immune activation and response to treatment in HER2 breast canc",
+                "score": 0.0
+            }
+        ]
+    },
+    "traitement 3": {
+        "treatment_title": "Pembrolizumab (TMBâ€‘high)",
+        "evidence_level": "III",
+        "recommendation_strength": "Weak",
+        "rationale": "Patient has TNBC metastatic breast cancer. MSI-high tumor supports immunotherapy with pembrolizumab. Recommended after progression on 2 prior line(s).",
+        "description_genes": [
+            {
+                "gene": "BRCA2",
+                "type": "wild_type",
+                "desc": "BRCA2 DNA repair associated"
+            },
+            {
+                "gene": "BRCA1",
+                "type": "wild_type",
+                "desc": "BRCA1 DNA repair associated"
+            }
+        ],
+        "interaction": [
+            {}
+        ],
+        "docs": [
+            {
+                "traitement": "Pembrolizumab (TMBâ€‘high)",
+                "doc_author": "Paulo Luz et al.",
+                "date": "May 2025",
+                "abstract": "In HER2+ breast cancer (BC), neoadjuvant therapy represents an ideal scenario for translational research, considering pathological complete response (pCR) as an endpoint. In these patients, achieving pCR after neoadjuvant therapy is associated with a better prognosis. However, biomarkers are needed to tailor optimal treatment for each patient. Evaluating tumour-infiltrating lymphocytes (TILs) has gained attention in predicting pCR. In the context of metastatic disease, TILs also appear to play a role in predicting outcomes. The interaction between the presence of TILs and reactive oxygen species (ROS) remains an area to be explored. ROS are critical for tumour cell homeostasis, and different levels can trigger differential biological responses in cancer cells and their microenvironment. Nevertheless, the influence of ROS on treatment efficacy and prognosis in patients with HER2+ BC remains to be elucidated. In this article, we reviewed the interplay between treatment response, immune system activation, and ROS production in HER2+ BC and suggested novel areas of intervention and research. We also present a bioinformatic analysis demonstrating that the altered expression of several redox-related genes could be associated with the prevalence of immune cell populations in the tumour microenvironment and with patient survival. New biomarkers are thus suggested and should be further explored to tailor the best treatment to each patient.",
+                "title": "Interaction between redox regulation immune activation and response to treatment in HER2 breast canc",
+                "score": 0.0
+            },
+            {
+                "traitement": "Pembrolizumab (TMBâ€‘high)",
+                "doc_author": "Muhammad Akram et al.",
+                "date": "Oct 2017",
+                "abstract": "Breast cancer remains a worldwide public health dilemma and is currently the most common tumour in the globe. Awareness of breast cancer, public attentiveness, and advancement in breast imaging has made a positive impact on recognition and screening of breast cancer. Breast cancer is life-threatening disease in females and the leading cause of mortality among women population. For the previous two decades, studies related to the breast cancer has guided to astonishing advancement in our understanding of the breast cancer, resulting in further proficient treatments. Amongst all the malignant diseases, breast cancer is considered as one of the leading cause of death in post menopausal women accounting for 23% of all cancer deaths. It is a global issue now, but still it is diagnosed in their advanced stages due to the negligence of women regarding the self inspection and clinical examination of the breast. This review addresses anatomy of the breast, risk factors, epidemiology of breast cancer, pathogenesis of breast cancer, stages of breast cancer, diagnostic investigations and treatment including chemotherapy, surgery, targeted therapies, hormone replacement therapy, radiation therapy, complementary therapies, gene therapy and stem-cell therapy etc for breast cancer.",
+                "title": "Awareness and current knowloedge of breast cancer",
+                "score": 0.0
+            },
+            {
+                "traitement": "Pembrolizumab (TMBâ€‘high)",
+                "doc_author": "Silvia Taralli et al.",
+                "date": "Mar 2025",
+                "abstract": "To investigate metabolic parameters from baseline",
+                "title": "Baseline ",
+                "score": 0.0
+            },
+            {
+                "traitement": "Pembrolizumab (TMBâ€‘high)",
+                "doc_author": "Nickolas Stabellini et al.",
+                "date": "Oct 2023",
+                "abstract": "PREDICT is an online prognostication tool derived from breast cancer registry information on approximately 6,000 women treated in the United Kingdom that estimates the postsurgical treatment benefit of surgery alone, chemotherapy, trastuzumab, endocrine therapy, and/or adjuvant bisphosphonates in early-stage breast cancer. Our aim was to validate the PREDICT algorithm in predicting 5- and 10-year overall survival (OS) probabilities using real-world outcomes among US patients with breast cancer.",
+                "title": "Validation of the PREDICT Prognostication Tool in US Patients With Breast Cancer",
+                "score": 0.0
+            },
+            {
+                "traitement": "Pembrolizumab (TMBâ€‘high)",
+                "doc_author": "Xin Jin et al.",
+                "date": "Apr 2025",
+                "abstract": "This study aimed to identify differential genes between pathological complete response (pCR) and non-pCR following neoadjuvant chemotherapy in triple-negative breast cancer (TNBC). Additionally, the expression and clinical significance of the differential gene SCNN1A in TNBC were explored.",
+                "title": "SCNN1A expression in triple negative breast cancer clinical implications for prognosis and neoadjuva",
+                "score": 0.0
+            }
+        ]
+    }
+}

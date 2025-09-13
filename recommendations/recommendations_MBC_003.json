@@ -1,0 +1,34 @@
+{
+  "patient_id": "MBC_003",
+  "subtype": "HER2+",
+  "biomarker_summary": {
+    "ER": "negative",
+    "PgR": "negative",
+    "HER2": "positive",
+    "PIK3CA": "wild_type",
+    "BRCA1": "wild_type",
+    "BRCA2": "wild_type",
+    "PALB2": "wild_type",
+    "MSI": "stable",
+    "TMB": 4.1
+  },
+  "treatment_history_summary": "Treatment-naive",
+  "recommendations": [
+    {
+      "treatment": "Trastuzumab \u00b1 Pertuzumab without chemo",
+      "evidence_level": "III",
+      "recommendation_strength": "Weak",
+      "node_path": "Metastatic Breast Cancer Treatment Decision (ESMO 2021/24) -> Initial Biopsy, Biomarker & Staging Assessment (updated) -> Breast Cancer Subtype Classification -> HER2\u2011Positive Breast Cancer -> Chemotherapy Contraindicated & HR\u2011Negative",
+      "rationale": "Patient has HER2+ metastatic breast cancer. HER2-positive status supports anti-HER2 therapy.",
+      "keywords": [
+        "systemic therapy",
+        "HER2 targeting",
+        "anti-HER2",
+        "metastatic breast cancer",
+        "pertuzumab",
+        "trastuzumab"
+      ]
+    }
+  ],
+  "total_recommendations": 1
+}

@@ -1,0 +1,261 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire Patient</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            position: relative; /* Pour placer les liens absolus */
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 30px 40px;
+            width: 500px;
+            z-index: 1; /* Pour que ça soit au-dessus des éléments absolus */
+        }
+
+        h1 {
+            text-align: center;
+            color: #00796b;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 8px 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            width: 100%;
+            background-color: #00796b;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #004d40;
+        }
+
+        /* Bouton Accueil en haut à gauche */
+        .back-home {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            color: #00796b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-home:hover {
+            text-decoration: underline;
+        }
+
+        /* Logo en haut à droite */
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            height: 150px; /* Ajuste si nécessaire */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Bouton Accueil en haut à gauche -->
+<a href="{% url 'home' %}" class="back-home">Accueil</a>
+
+<!-- Logo en haut à droite -->
+<img src="{% static 'logo_carjac.png' %}" alt="Logo CARJAC" class="logo">
+
+<div class="container">
+    <h1>Formulaire du patient</h1>
+    <br>
+    <form method="post">
+        {% csrf_token %}
+        <label><b>Informations personnelles :</b></label>
+        <label for="patient_id">ID du patient :</label>
+        <input type="text" name="patient_id" id="patient_id" required>
+
+        <label for="age">Âge :</label>
+        <input type="number" name="age" id="age" min="0" max="110" required>
+
+        <label for="gender">Genre :</label>
+        <select name="gender" id="gender" required>
+            <option value=""></option>
+            <option value="female">Femme</option>
+            <option value="male">Homme</option>
+            <option value="non_binary">Non binaire</option>
+        </select>
+
+        <label for="performance_status">Statut de performance :</label>
+        <input type="number" name="performance_status" id="performance_status" min="0" max="5">
+
+        <label for="cancer_type">Type de cancer :</label>
+        <input type="text" name="cancer_type" id="cancer_type" required>
+
+        <label for="stage">Stade de la maladie :</label>
+        <input type="text" name="disease_stage" id="disease_stage" required>
+
+        <label for="histology">Histologie :</label>
+        <input type="text" name="histology" id="histology">
+
+        <label for="grade">Stade TNM :</label>
+        <input type="number" name="TNM_grade" id="TNM_grade" min="1" max="4">
+
+        <br><br><br><br>
+
+        <label><b>Biomarqueurs :</b></label>
+
+        <label for="ER">ER :</label>
+        <select name="ER" id="ER">
+            <option value=""></option>
+            <option value="positive">Positive</option>
+            <option value="negative">Negative</option>
+        </select>
+
+        <label for="PgR">PgR :</label>
+        <select name="PgR" id="PgR">
+            <option value=""></option>
+            <option value="positive">Positive</option>
+            <option value="negative">Negative</option>
+        </select>
+
+        <label for="HER2">HER2 :</label>
+        <select name="HER2" id="HER2">
+            <option value=""></option>
+            <option value="positive">Positive</option>
+            <option value="negative">Negative</option>
+        </select>
+
+        <label for="PIK3CA">PIK3CA :</label>
+        <select name="PIK3CA" id="PIK3CA">
+            <option value=""></option>
+            <option value="mutant">Mutant</option>
+            <option value="wild_type">Wild type</option>
+        </select>
+
+        <label for="BRCA1">BRCA1 :</label>
+        <select name="BRCA1" id="BRCA1">
+            <option value=""></option>
+            <option value="mutant">Mutant</option>
+            <option value="wild_type">Wild type</option>
+        </select>
+
+        <label for="BRCA2">BRCA2 :</label>
+        <select name="BRCA2" id="BRCA2">
+            <option value=""></option>
+            <option value="mutant">Mutant</option>
+            <option value="wild_type">Wild type</option>
+        </select>
+
+        <label for="PALB2">PALB2 :</label>
+        <select name="PALB2" id="PALB2">
+            <option value=""></option>
+            <option value="mutant">Mutant</option>
+            <option value="wild_type">Wild type</option>
+        </select>
+
+        <label for="ESR1">ESR1 :</label>
+        <select name="ESR1" id="ESR1">
+            <option value=""></option>
+            <option value="mutant">Mutant</option>
+            <option value="wild_type">Wild type</option>
+        </select>
+
+        <label for="PD_L1">PD_L1 :</label>
+        <select name="PD_L1" id="PD_L1">
+            <option value=""></option>
+            <option value="positive">Positive</option>
+            <option value="negative">Negative</option>
+        </select>
+
+        <label for="MSI">MSI :</label>
+        <select name="MSI" id="MSI">
+            <option value=""></option>
+            <option value="high">High</option>
+            <option value="stable">Stable</option>
+            <option value="low">Low</option>
+        </select>
+
+        <label for="TMB">TMB :</label>
+        <input type="number" step="0.1" name="TMB" id="TMB" placeholder="TMB (nombre)">
+
+        <label for="NTRK">NTRK :</label>
+        <select name="NTRK" id="NTRK">
+            <option value=""></option>
+            <option value="positive">Positive</option>
+            <option value="negative">Negative</option>
+        </select>
+
+        <br><br><br><br>
+
+        <label><b>Historique de traitement :</b></label>
+        <label for="regime">Régime :</label>
+        <input type="text" name="regime" id="regime" required>
+
+        <label for="response">Réponse :</label>
+        <input type="text" name="response" id="response" required>
+
+        <label for="month_duration">Durée en mois :</label>
+        <input type="number" name="month_duration" id="month_duration" min="0" max="50" required>
+
+        <label for="progression">Progression :</label>
+        <select name="progression" id="progression">
+            <option value=""></option>
+            <option value="positive">Oui</option>
+            <option value="negative">Non</option>
+        </select>
+
+        <br><br><br><br>
+
+        <label><b>Valeurs de laboratoire :</b></label>
+        <input type="number" step="0.1" name="HbA1c" placeholder="HbA1c">
+        <input type="number" name="fasting_glucose" placeholder="Glucose à jeun">
+        <input type="number" step="0.1" name="creatinine" placeholder="Créatinine">
+        <input type="number" step="0.1" name="bilirubin" placeholder="Bilirubine">
+
+        <br><br><br><br>
+
+        <label for="metastatic_sites"><b>Sites métastatiques :</b></label>
+        <input type="text" name="metastatic_sites" id="metastatic_sites" placeholder="ex: bone, liver">
+
+        <br><br><br><br>
+
+        <label for="contraindications"><b>Contre-indications :</b></label>
+        <input type="text" name="contraindications" id="contraindications">
+
+        <input type="submit" value="Chercher">
+    </form>
+</div>
+</body>
+</html>
